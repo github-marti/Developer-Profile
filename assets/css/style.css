@@ -1,0 +1,130 @@
+body {
+    background-image: url("../images/linen.png");
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777
+}
+
+.white {
+    background: white;
+}
+
+.teal {
+    background: #4aaaa5;
+}
+
+#logo {
+    font-family: 'Georgia', Times, "Times New Roman", serif;
+    background: #4aaaa5;
+    color: white;
+    font-size: 1.6em;
+}
+
+.main-title {
+    font-family: 'Georgia', Times, "Times New Roman", serif;
+    color: #4aaaa5;
+    font-size: 1.6em;
+}
+
+.gray-border {
+    border-bottom: 1px solid #ddd;
+}
+
+.line {
+    width: 100%;
+    border-top: #dddddd solid 2px;
+}
+
+.vertical-line {
+    height: 100%;
+    border-right: #dddddd solid 1px;
+}
+
+#profile-img {
+    width: 250px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+    color: #4aaaa5
+}
+
+footer {
+    height: 50px;
+    border-top: 5px solid #4aaaa5;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #666;
+    color: white;
+    font-size: 0.5em;
+}
+
+.box {
+    height: 200px;
+}
+
+.project-text {
+    background: #4aaaa5;
+    color: white;
+    font-family: 'Georgia', Times, "Times New Roman", serif;
+    font-size: 1.1em;
+    width: 100%;
+    margin-top: 130px;
+    line-height: 2.5rem;
+    height: 2.5rem;
+}
+
+.project-background {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.project1 {
+    background-image: url("http://lorempixel.com/output/cats-q-c-400-200-4.jpg");
+}
+
+.project2 {
+    background-image: url("http://lorempixel.com/output/transport-q-c-400-200-5.jpg");
+}
+
+.project3 {
+    background-image: url("http://lorempixel.com/output/food-q-c-400-200-8.jpg");
+}
+
+.project4 {
+    background-image: url("http://lorempixel.com/output/nightlife-q-c-400-200-6.jpg");
+}
+
+.project5 {
+    background-image: url("http://lorempixel.com/output/people-q-c-400-200-7.jpg");
+}
+
+#message {
+    height: 150px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #4aaaa5;
+    border-color: #4aaaa5;
+}
+
+.btn:hover {
+    background-color: #36807c;
+}
+
+
+@media screen and (max-width: 540px) {
+    #profile-img {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    li {
+        padding-left: 10px;
+    }
+
+    .navbar-light .navbar-toggler {
+        margin-right: 10px;
+    }
+}
