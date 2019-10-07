@@ -61,7 +61,8 @@ body {
 }
 
 .header {
-    font-family: 'Walter Turncoat', sans-serif;
+    font-family: 'Playfair Display', serif;
+    background-color: rgb(255, 212, 125);
     width: 100%;
     height: 400px;
     margin: 0;
@@ -70,12 +71,21 @@ body {
 
 .header-text {
     color: rgba(49, 47, 62);
-    font-size: 2em;
     text-align: right;
     position: absolute;
     bottom: 20px;
     right: 25px;
     margin: 0;
+}
+
+.header-text h1 {
+    font-size: 4.5em;
+    font-style: italic;
+}
+
+.header-text h3 {
+    font-size: 2em;
+    font-weight: normal;
 }
 
 .header-text h1,
@@ -84,7 +94,6 @@ body {
 }
 
 #home h1 {
-    font-family: 'Walter Turncoat', sans-serif;
     font-size: 3em;
     text-align: center;
 }
@@ -105,13 +114,11 @@ body {
     margin-top: 40px;
     max-width: 30%;
     border: 4px solid rgb(49, 47, 62);
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
+    border-radius: 50%;
 }
 
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url("../images/korea-photo.jpg");
-    font-family: 'Walter Turncoat', sans-serif;
     width: 100%;
     height: 400px;
     margin: 0;
@@ -138,16 +145,18 @@ body {
 }
 
 .title {
+    font-size: 2.3em;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
     color: rgb(49, 47, 62);
     text-align: center;
-    font-family: 'Walter Turncoat', sans-serif;
     font-size: 3em;
     margin: 20px 0 0 0;
     padding-top: 50px;
 }
 
 .project-title {
-    font-family: 'Walter Turncoat', sans-serif;
+    font-family: 'Playfair Display', serif;
     text-align: left;
     color: rgba(49, 47, 62);
     margin: 20px auto;
@@ -183,7 +192,7 @@ body {
     .projects-container {
         width: 70%;
     }
-}
+    
 
 @media screen and (min-width: 1000px) {
     .profile-img {
