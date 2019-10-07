@@ -1,4 +1,4 @@
-projectObject = [
+const projectObject = [
     {
         "title": "Weather Dashboard",
         "image": "assets/images/weather-dashboard.png",
@@ -33,35 +33,52 @@ projectObject = [
     }
 ];
 
-function toggleNavBar() {
-    let x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
+// variables for sticky navbar 
+const navBar = document.getElementById("stickynavbar");
+const sticky = navBar.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function stickyNavBar() {
+  if (window.pageYOffset > sticky) {
+    navBar.classList.add("sticky");
+  } else {
+    navBar.classList.remove("sticky");
+  }
 }
 
-function onScroll(event){
-    // pixels away from top of screen
-    let scrollPos = $(document).scrollTop();
-    $('.topnav a').each(function () {
-        let currLink = $(this);
-        let refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('#menu-center ul li a').removeClass("active"); //added to remove active class from all a elements
-            currLink.addClass("active");
-        }
-        else {
-            currLink.removeClass("active");
+$(".topnav a").click(function () {
+    $("a.active").removeClass('active');
+    $(this).addClass('active');
+    let activeSection = $(this).attr('href'); //get active section id
+    $('html, body').animate({
+    //and scroll to the section
+    scrollTop: $(activeSection).offset().top
+    }, 1000);
+});
+  
+  
+$(document).scroll(function () {
+//get document scroll position
+    let position = $(document).scrollTop(); 
+    //get header height
+    let header = $('.topnav').outerHeight();
+    
+    //check active section
+    $('.section').each(function(i) {
+        if($(this).position().top <= (position + header))
+        {
+            $("a.active").removeClass('active');
+            $("a").eq(i).addClass('active');
         }
     });
-    }
+}); 
+  
 
 function appendProjects() {
     for (let i = 0; i < projectObject.length; i++) {
 
         let project = projectObject[i];
+        let projectWrapper = $('<div>');
         let projectTitle = $('<h1>').text(project.title);
         let projectDiv = $('<div>');
         let projectImg = $('<img>');
@@ -69,6 +86,7 @@ function appendProjects() {
         let deployedLink = $('<a>').html('<i class="fas fa-link fa-sm"></i>');
         let repoLink = $('<a>').html('<i class="fab fa-github fa-sm"></i>');
 
+        projectWrapper.addClass('project-wrapper');
         projectTitle.addClass('project-title');
         projectDiv.addClass('project-description');
         projectImg.attr('src', project.image);
@@ -82,9 +100,14 @@ function appendProjects() {
         
         projectTitle.append(deployedLink, repoLink);
         projectDiv.append(projectImg, projectDesc);
-        $('.projects-container').append(projectTitle, projectDiv);
+        projectWrapper.append(projectTitle, projectDiv);
+        $('.projects-container').append(projectWrapper);
+
     };
 };
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {stickyNavBar()};
 
 appendProjects();
 

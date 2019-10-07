@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     
     <!-- ref to google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Prata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Walter+Turncoat&display=swap" rel="stylesheet">
     
     <!-- ref to jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -25,35 +25,36 @@
 
 <!-- navbar -->
 
-    <div class="hero-image">
-        <h1 class="hero-text">My name is Marti.</h1>
+    <div class="header">
+        <div class="header-text">
+            <h1>My name is Marti.</h1>
+            <h3>(it's not short for anything)</h3>
+        </div>
     </div>
 
-    <div class="topnav" id="myTopnav">
+    <div class="topnav" id="stickynavbar">
         <a href="#home" class="active float-left">Marti</a>
-        <a href="index.html#projects" class="float-left">Projects</a>
-        <a href="index.html#contact" class="float-left">Contact</a>
-        <a href="#instagram" class="float-right"><i class="fab fa-instagram fa-lg"></i></a>
-        <a href="#linkedin" class="float-right"><i class="fab fa-linkedin-in fa-lg"></i></a>
-        <a href="#github" class="float-right"><i class="fab fa-github fa-lg"></i></a>
-        <a href="#email" class="float-right"><i class="fas fa-envelope"></i></a>
-        <a href="javascript:void(0);" class="icon" onclick="toggleNavBar()">
-            <i class="fa fa-bars"></i>
-        </a>
+        <a href="#projects" class="float-left">Projects</a>
+        <a href="#contact" class="float-left">Contact</a>
+        <a href="#instagram" class="float-right social"><i class="fab fa-instagram fa-sm"></i></a>
+        <a href="#linkedin" class="float-right social"><i class="fab fa-linkedin-in fa-sm"></i></a>
+        <a href="#github" class="float-right social"><i class="fab fa-github fa-sm"></i></a>
+        <a href="#email" class="float-right social"><i class="fas fa-envelope fa-sm"></i></a>
     </div>
 
-    <div class="text-column">
+    <div id="home" class="text-column section">
         <p>I'm a Los Angeles-based web developer specializing in HTML, CSS, JavaScript, and soon to be more.
             When I’m not spending my time coding, I enjoy playing pool, drinking beer, and reading weird fiction.</p>
         
         <p>I lived in Japan and Korea for over seven years and speak both languages fluently, and my most recent passion project is Russian. 
             I’m always a month behind on my Economist and Scientific American subscriptions, but mindfulness and yoga have taught me how to forgive myself.</p>
-    
-        <p>My goals in becoming a web developer are to challenge myself intellectually and to achieve a degree of career flexibility that would allow me to run half-marathons all over the world. Someday I might even get a dog.</p>
+        <img class="profile-img" src="assets/images/korea-photo-narrow.png">
     </div>
 
-    <div class="projects-container" id="projects">
-        <h1 class="title">Projects</h1>
+    <div class="hero-image"></div>
+
+    <h1 class="title section" id="projects">Projects</h1>
+    <div class="projects-container">
     </div>
 
 <!-- ref to javascript -->
