@@ -6,13 +6,18 @@
 body {
     margin: 0;
     font-family: 'IBM Plex Sans', sans-serif;
+    position: relative;
 }
 
 .topnav {
+    z-index: 100;
     overflow: hidden;
     background: rgb(49, 47, 62);
-  }
-  
+}
+
+.playfair-display {
+    font-family: 'Playfair Display', serif;
+}
 
 .topnav a {
     display: block;
@@ -22,6 +27,11 @@ body {
     text-decoration: none;
     font-size: 1.3em;
     line-height: 1.4em;
+    -webkit-transition: background-color .2s;
+    -moz-transition: background-color .2s;
+    -ms-transition: background-color .2s;
+    -o-transition: background-color .2s;
+    transition: background-color .2s;
 }
 
 
@@ -61,7 +71,6 @@ body {
 }
 
 .header {
-    font-family: 'Playfair Display', serif;
     background-color: rgb(255, 212, 125);
     width: 100%;
     height: 400px;
@@ -127,16 +136,59 @@ body {
     background-size: cover;
 }
 
+.title {
+    font-size: 2.3em;
+    font-style: italic;
+    color: rgb(49, 47, 62);
+    text-align: center;
+    font-size: 4em;
+    margin: 40px 0 0 0;
+    padding-top: 70px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    margin: 80px auto;
+    height: 40%;
+    width: 80%;
+}
+
+.modal-content img {
+    width: 100%;
+}
+
+.close {
+    cursor: pointer;
+    color: rgb(255, 212, 125);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 3px;
+}
+
 .projects-container {
     width: 80%;
     padding-top: 30px;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 80px auto;
     text-align: center;
     color: rgb(49, 47, 62);
 }
 
 .projects-container a {
-    color: rgba(49, 47, 62);;
+    color: rgba(49, 47, 62);
     margin: 0 10px;
 }
 
@@ -144,20 +196,13 @@ body {
     color: rgb(255, 212, 125);
 }
 
-.title {
-    font-size: 2.3em;
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-    color: rgb(49, 47, 62);
-    text-align: center;
-    font-size: 3em;
-    margin: 20px 0 0 0;
-    padding-top: 50px;
+.project-wrapper {
+    padding: 20px 0;
 }
 
 .project-title {
-    font-family: 'Playfair Display', serif;
     text-align: left;
+    font-size: 2em;
     color: rgba(49, 47, 62);
     margin: 20px auto;
     padding: 10px;
@@ -166,17 +211,88 @@ body {
 
 .project-description {
     padding: 0;
+    margin: 20px 0;
     overflow: auto;
 }
 
 .project-description p {
     font-size: 1.2em;
+    padding: 10px 0;
+    margin-top: 0;
+}
+
+.project-description a {
+    display: block;
+    text-align: right;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.project-description i {
+    margin: 0 10px;
 }
 
 .project-image {
+    cursor: pointer;
     width: 40%;
     float: left;
     padding: 0 20px 0 0;
+    margin-top: 10px;
+}
+
+.image-expand {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    background: rgb(255, 212, 125);
+    border-radius: 3px;
+}
+
+.contact-container {
+    color: rgba(49, 47, 62);
+    margin: 0 0 10px 0;
+    padding: 0 20px 80px 20px;
+    text-align: center;
+}
+
+.subname {
+    margin: 0;
+    color: rgb(255, 212, 125);
+}
+
+.contact-container a {
+    color: rgba(49, 47, 62);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.contact-container a:hover {
+    text-decoration: underline;
+}
+
+.line {
+    border-right: 2px solid rgba(49, 47, 62);
+}
+
+.footer {
+    background: rgba(49, 47, 62);
+    color: rgba(49, 47, 62);
+    text-align: right;
+    font-size: 1.4em;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    -webkit-transition: color .2s;
+    -moz-transition: color .2s;
+    -ms-transition: color .2s;
+    -o-transition: color .2s;
+    transition: color .2s;
+}
+
+.footer:hover {
+    color: rgb(255, 212, 125);
 }
 
 
@@ -185,6 +301,21 @@ body {
 @media screen and (max-width: 600px) {
     .topnav a.social {
         display: none;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .project-image {
+        display: none;
+    }
+
+    .project-description a {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .image-expand {
+        display: inline-block;
     }
 }
 
