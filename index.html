@@ -49,10 +49,7 @@
         
         <p>I lived in Japan and Korea for over seven years and speak both languages fluently, and my most recent passion project is Russian. 
             I’m always a month behind on my Economist and Scientific American subscriptions, but mindfulness and yoga have taught me how to forgive myself.</p>
-        <img class="profile-img" src="assets/images/korea-photo-narrow.png">
     </div>
-
-    <div class="hero-image"></div>
 
     <!-- hidden modal box -->
     <div class="modal">
@@ -62,15 +59,14 @@
         </div>     
     </div>
 
-    <!-- projects dynamically added to project container -->
-    <h1 id="projects" class="title section playfair-display">Projects</h1>
-    <div class="projects-container">
+    <div id="projects" class="projects-container section">
+        <h1 class="title playfair-display">Projects</h1>
         <div class="project-wrapper">
             <div class="project-title">
                 Weather Dashboard
             </div>
             <div class="project-description">
-                <img class="project-image" src="assets/images/weather-dashboard.png">
+                <img class="project-image" modal-index="0" src="assets/images/weather-dashboard.png">
                 <p>Want to check your local weather forecast? No problem! This app shows you the local weather conditions and allows you to search for the weather in the city of your choice.</p>
                 <p><span class="image-expand" modal-index="0">Project Images</span></p>
                 <a href="https://github-marti.github.io/Weather-Dashboard/"><i class="fas fa-link"></i>Active Link</a>
@@ -82,7 +78,7 @@
                 Code Quiz
             </div>
             <div class="project-description">
-                <img class="project-image" src="assets/images/code-quiz.png">
+                <img class="project-image" modal-index="1" src="assets/images/code-quiz.png">
                 <p>Test out your coding knowledge! Answer a series of questions about coding before the time limit runs out. You can log your score and check the high score board to see how you compare to others!</p>
                 <p><span class="image-expand" modal-index="1">Project Images</span></p>
                 <a href="https://github-marti.github.io/Code-Quiz/"><i class="fas fa-link"></i>Active Link</a>
@@ -94,7 +90,7 @@
                 Day Planner
             </div>
             <div class="project-description">
-                <img class="project-image" src="assets/images/day-planner.png">
+                <img class="project-image" modal-index="2" src="assets/images/day-planner.png">
                 <p>Use this simple app to plan out your activities for the working day. Press the save button to log your scheduled task, and come back to check on your to-do list!</p>
                 <p><span class="image-expand" modal-index="2">Project Images</span></p>
                 <a href="https://github-marti.github.io/Day-Planner/"><i class="fas fa-link"></i>Active Link</a>
@@ -106,7 +102,7 @@
                 Password Generator
             </div>
             <div class="project-description">
-                <img class="project-image" src="assets/images/password-generator.png">
+                <img class="project-image" modal-index="3" src="assets/images/password-generator.png">
                 <p>This little program will help you create a random password of your choice for all of your security needs. Click the 'Generate Password' button and select the characters you would like your password to contain, and then easily copy your randomly generated password to the clipboard!</p>
                 <p><span class="image-expand" modal-index="3">Project Images</span></p>
                 <a href="https://github-marti.github.io/Password-Generator/"><i class="fas fa-link"></i>Active Link</a>
@@ -116,19 +112,23 @@
     </div>
 
     <!-- contact me section -->
-    <h1 id="contact" class="title section playfair-display">Marti McElreath</h1>
-    <div class="contact-container">
-        <h1 class="subname playfair-display">マーティ ミックエルリース</h3>
-        <h1 class="subname playfair-display">마티 믹켈리스</h3>
-        <h3>marti.mcelreath@gmail.com</h3>
-        <h3>480-993-xxxx</h3>
-        <h2>
-            <a href="#resume">Resume</a>
-            <span class="line"></span>
-            <a href="https://github.com/github-marti" target="_blank">Github</a>
-            <span class="line"></span>
-            <a href="https://www.linkedin.com/in/marti-mcelreath-b0929a7a/" target="_blank">LinkedIn</a>
-        </h2>
+    <div id="contact" class="section">
+        <div class="hero-image"></div>
+        <img class="profile-img" src="assets/images/korea-photo-narrow.png">
+        <h1 class="title playfair-display">Marti McElreath</h1>
+        <div class="contact-text">
+            <h1 class="subname playfair-display">マーティ ミックエルリース</h3>
+            <h1 class="subname playfair-display">마티 믹켈리스</h3>
+            <h3>marti.mcelreath@gmail.com</h3>
+            <h3>480-993-xxxx</h3>
+            <h2>
+                <a href="#resume">Resume</a>
+                <span class="line"></span>
+                <a href="https://github.com/github-marti" target="_blank">Github</a>
+                <span class="line"></span>
+                <a href="https://www.linkedin.com/in/marti-mcelreath-b0929a7a/" target="_blank">LinkedIn</a>
+            </h2>
+        </div>
     </div>
 
     <!-- footer -->

@@ -49,12 +49,19 @@ $(document).scroll(function () {
 // make navbar sticky once scrolling down past header
 window.onscroll = function() {stickyNavBar()};
 
-// make modal appear when screen is narrow
+// make modal appear on clicking the "see images" button
 $('.image-expand').click(function () {
     let modalIndex = $(this).attr('modal-index');
     $('.modal-image').attr('src', projectImages[modalIndex]);
     $('.modal').attr('style', 'display:block;');
 });
+
+// make modal appear when project image is clicked
+$('.project-image').click(function() {
+    let modalIndex = $(this).attr('modal-index');
+    $('.modal-image').attr('src', projectImages[modalIndex]);
+    $('.modal').attr('style', 'display:block;');
+})
 
 // make modal disappear when screen is narrow
 $('.close').click(function() {
