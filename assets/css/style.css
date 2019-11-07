@@ -148,7 +148,7 @@ body {
     text-align: center;
     font-size: 4em;
     margin: 20px;
-    padding-top: 20px;
+    padding: 20px 0;
 }
 
 .modal {
@@ -166,12 +166,36 @@ body {
 }
 
 .modal-content {
-    margin: 80px auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: auto;
+    background: white;
+    overflow: auto;
+    padding: 30px;
     width: 70%;
+    overflow: auto;
+    height: 60%;
+    border: 5px solid rgb(255, 212, 125);
+    border-radius: 5px;
 }
 
-.modal-content img {
-    width: 100%;
+.modal-content h1 {
+    color: rgb(49, 47, 62);
+    font-size: 2.5em;
+}
+
+.modal-content a {
+    color: rgba(49, 47, 62);
+    margin: 0 10px;
+    font-size: 1.3em;
+}
+
+.modal-content a:hover {
+    color: rgb(255, 212, 125);
+}
+
+.modal-languages {
+    font-style: italic;
 }
 
 .close {
@@ -185,33 +209,68 @@ body {
 }
 
 .projects-container {
-    width: 80%;
+    cursor: pointer;
+    width: 90%;
     padding-top: 30px;
     margin: 0 auto 80px auto;
     text-align: center;
     color: rgb(49, 47, 62);
 }
 
-.projects-container a {
-    color: rgba(49, 47, 62);
-    margin: 0 10px;
-}
-
-.projects-container a:hover {
-    color: rgb(255, 212, 125);
-}
-
 .project-wrapper {
-    padding: 20px 0;
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    height: 300px;
+    padding: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-wrapper:hover .project-title {
+    opacity: 1;
+}
+
+#lets-talk {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url("../images/lets-talk.png");
+}
+
+#team-profile-generator {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url("../images/team-summary-generator.png");
+}
+
+#note-taker {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url("../images/note-taker.png");
+}
+
+#musi-holic {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url("../images/musi-holic.png");
+}
+
+#weather-dashboard {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url("../images/weather-dashboard.png");
+}
+
+#code-quiz {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url("../images/code-quiz.png");
 }
 
 .project-title {
-    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
     font-size: 2em;
-    color: rgba(49, 47, 62);
-    margin: 20px auto;
-    padding: 10px;
-    border-bottom: 4px solid rgb(255, 212, 125);
+    text-align: center;
+    color: rgb(255, 212, 125);
+    background: rgba(49, 47, 62);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.2s;
 }
 
 .project-description {
@@ -350,12 +409,15 @@ body {
     .image-expand {
         display: inline-block;
     }
-}
 
-@media screen and (min-width: 900px) {
     .projects-container {
-        width: 70%;
+        width: 100%;
     }
+
+    .project-wrapper {
+        width: 45%;
+    }
+}
     
 
 @media screen and (min-width: 1000px) {
