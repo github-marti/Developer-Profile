@@ -8,11 +8,11 @@ const projectImages = [
 
 const projectArray = [
   {
-    title: "Let's Talk",
+    title: "WordLove",
     description: "Vocabulary learning app that allows users to look up words and phrases in other languages and save them to their own custom vocabulary lists. Users can even practice their saved words with flashcards.",
     languages: "HTML, CSS, JavaScript, Node.js, MySQL",
-    github: "https://github.com/github-marti/MACE-Project",
-    deployed: "https://lets-talk-vocab.herokuapp.com/"
+    github: "https://github.com/github-marti/Lets-Talk",
+    deployed: "https://wordlove.herokuapp.com/"
   },
   {
     title: "Team Profile Generator",
