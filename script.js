@@ -8,11 +8,36 @@ const projectImages = [
 
 const projectArray = [
   {
+    title: "Date Rescue",
+    description: `Dating safety app made to help people feel secure when meeting potential new flames off of dating apps.
+    Users can generate a public “date page” that contains information about their upcoming meeting that they can
+    then share with friends, and which can be canceled at the user’s discretion or will expire in 12 hours. Users
+    can also schedule a “rescue call” from the app, which will dial them at a time of their choice, providing them
+    a convenient escape in case their date turns sour.`,
+    languages: "React, Express, Node.js, MySQL",
+    github: "https://github.com/github-marti/Date-Rescue",
+    deployed: "https://date-rescue.herokuapp.com/"
+  },
+  {
     title: "WordLove",
     description: "Vocabulary learning app that allows users to look up words and phrases in other languages and save them to their own custom vocabulary lists. Users can even practice their saved words with flashcards.",
     languages: "HTML, CSS, JavaScript, Node.js, MySQL",
-    github: "https://github.com/github-marti/Lets-Talk",
+    github: "https://github.com/github-marti/WordLove",
     deployed: "https://wordlove.herokuapp.com/"
+  },
+  {
+    title: "Musi-Holic",
+    description: "Looking for the perfect cocktail and music combination? Sit back, relax, and open this app! Input your favorite ingredients and pick one of the available drink recipes, and Musi-Holic will recommend a song for you based on your drink of choice.",
+    languages: "HTML, CSS, JavaScript",
+    github: "https://github.com/github-marti/Code-Imposters-Project",
+    deployed: "https://github-marti.github.io/Code-Imposters-Project/"
+  },
+  {
+    title: "Weather Dashboard",
+    description: "Want to check your local weather forecast? No problem! This app shows you the local weather conditions and allows you to search for the weather in the city of your choice.",
+    languages: "HTML, CSS, JavaScript",
+    github: "https://github.com/github-marti/Weather-Dashboard",
+    deployed: "https://github-marti.github.io/Weather-Dashboard/"
   },
   {
     title: "Team Profile Generator",
@@ -27,27 +52,6 @@ const projectArray = [
     languages: "HTML, CSS, JavaScript, Node.js, MySQL",
     github: "https://github.com/github-marti/Note-Taker",
     deployed: "https://martis-note-taker.herokuapp.com/"
-  },
-  {
-    title: "Weather Dashboard",
-    description: "Want to check your local weather forecast? No problem! This app shows you the local weather conditions and allows you to search for the weather in the city of your choice.",
-    languages: "HTML, CSS, JavaScript",
-    github: "https://github.com/github-marti/Weather-Dashboard",
-    deployed: "https://github-marti.github.io/Weather-Dashboard/"
-  },
-  {
-    title: "Code Quiz",
-    description: "Test out your coding knowledge! Answer a series of questions about coding before the time limit runs out. You can log your score and check the high score board to see how you compare to others!",
-    languages: "HTML, CSS, JavaScript",
-    github: "https://github.com/github-marti/Code-Quiz",
-    deployed: "https://github-marti.github.io/Code-Quiz/"
-  },
-  {
-    title: "Musi-Holic",
-    description: "Looking for the perfect cocktail and music combination? Sit back, relax, and open this app! Input your favorite ingredients and pick one of the available drink recipes, and Musi-Holic will recommend a song for you based on your drink of choice.",
-    languages: "HTML, CSS, JavaScript",
-    github: "https://github.com/github-marti/Code-Imposters-Project",
-    deployed: "https://github-marti.github.io/Code-Imposters-Project/"
   }
 ]
 

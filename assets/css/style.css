@@ -232,12 +232,12 @@ body {
     opacity: 1;
 }
 
-#lets-talk {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url("../images/wordlove.png");
+#date-rescue {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url("../images/date-rescue3.png");
 }
 
-#team-profile-generator {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url("../images/team-summary-generator.png");
+#lets-talk {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url("../images/wordlove.png");
 }
 
 #note-taker {
@@ -252,8 +252,8 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url("../images/weather-dashboard.png");
 }
 
-#code-quiz {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url("../images/code-quiz.png");
+#team-profile-generator {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url("../images/team-summary-generator.png");
 }
 
 .project-title {
