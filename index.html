@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,14 @@
 
     <!-- ref to font awesome -->
     <script src="https://kit.fontawesome.com/4a3eda80d3.js" crossorigin="anonymous"></script>
-    
+
     <!-- ref to style.css -->
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
     <!-- ref to google fonts -->
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900i&display=swap" rel="stylesheet">
-    
+
     <!-- ref to jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -23,7 +24,7 @@
 
 <body>
 
-<!-- navbar -->
+    <!-- navbar -->
 
     <div class="header">
         <div class="header-text playfair-display">
@@ -38,17 +39,22 @@
             <a href="#projects" class="float-left">Projects</a>
             <a href="#contact" class="float-left">Contact</a>
         </div>
-        <a href="https://www.linkedin.com/in/marti-mcelreath-b0929a7a/" target="_blank" class="float-right social"><i class="fab fa-linkedin-in fa-sm"></i></a>
-        <a href="https://github.com/github-marti" target="_blank" class="float-right social"><i class="fab fa-github fa-sm"></i></a>
+        <a href="https://www.linkedin.com/in/marti-mcelreath-b0929a7a/" target="_blank" class="float-right social"><i
+                class="fab fa-linkedin-in fa-sm"></i></a>
+        <a href="https://github.com/github-marti" target="_blank" class="float-right social"><i
+                class="fab fa-github fa-sm"></i></a>
         <a href="mailto:marti.mcelreath@gmail.com" class="float-right social"><i class="fas fa-envelope fa-sm"></i></a>
     </div>
 
     <div id="home" class="text-column section">
-        <p>I'm a Los Angeles-based web developer skilled in HTML5, CSS3, JavaScript, JQuery, Bootstrap, Node Js, MySQL, MongoDB, Express, Handlebars JS, & React Js.
+        <p>I'm a Los Angeles-based web developer skilled in HTML5, CSS3, JavaScript, JQuery, Bootstrap, Node Js, MySQL,
+            MongoDB, Express, Handlebars JS, & React Js.
             When I’m not spending my time coding, I enjoy playing pool, drinking beer, and reading weird fiction.</p>
-        
-        <p>I lived in Japan and Korea for over seven years and speak both languages fluently, and my most recent passion project is Russian. 
-            I’m always a month behind on my Economist and Scientific American subscriptions, but mindfulness and yoga have taught me how to forgive myself.</p>
+
+        <p>I lived in Japan and Korea for over seven years and speak both languages fluently, and my most recent passion
+            project is Russian.
+            I’m always a month behind on my Economist and Scientific American subscriptions, but mindfulness and yoga
+            have taught me how to forgive myself.</p>
     </div>
 
     <!-- hidden modal box -->
@@ -56,11 +62,19 @@
         <div class="modal-content">
             <span class="close"><i class="fas fa-window-close"></i></span>
             <h1 class="modal-title playfair-display"></h1>
+            <div class="img-nav-container">
+                <div class="img-nav-controls">
+                    <i class="fas fa-chevron-left"></i>Back<i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            <img id="modal-img-1" class="modal-img">
+            <img id="modal-img-2" class="modal-img">
+            <img id="modal-img-3" class="modal-img">
             <h3 class="modal-description"></h3>
             <a class="modal-github" target="_blank">Github Repo</a>
             <a class="modal-deployed" target="_blank">Deployed Page</a>
             <h3 class="modal-languages"></h3>
-        </div>     
+        </div>
     </div>
 
     <div id="projects" class="projects-container section">
@@ -104,16 +118,16 @@
         <h1 class="title playfair-display">Marti McElreath</h1>
         <div class="contact-text">
             <h1 class="subname playfair-display">マーティ ミックエルリース</h3>
-            <h1 class="subname playfair-display">마티 믹켈리스</h3>
-            <h3>marti.mcelreath@gmail.com</h3>
-            <h3>480-993-xxxx</h3>
-            <h2>
-                <a href="assets/pdf/Marti McElreath resume.pdf">Resume</a>
-                <span class="line"></span>
-                <a href="https://github.com/github-marti" target="_blank">Github</a>
-                <span class="line"></span>
-                <a href="https://www.linkedin.com/in/marti-mcelreath-b0929a7a/" target="_blank">LinkedIn</a>
-            </h2>
+                <h1 class="subname playfair-display">마티 믹켈리스</h3>
+                    <h3>marti.mcelreath@gmail.com</h3>
+                    <h3>480-993-xxxx</h3>
+                    <h2>
+                        <a href="assets/pdf/Marti McElreath resume.pdf">Resume</a>
+                        <span class="line"></span>
+                        <a href="https://github.com/github-marti" target="_blank">Github</a>
+                        <span class="line"></span>
+                        <a href="https://www.linkedin.com/in/marti-mcelreath-b0929a7a/" target="_blank">LinkedIn</a>
+                    </h2>
         </div>
     </div>
 
@@ -124,8 +138,9 @@
 
 
 
-<!-- ref to javascript -->
-<script src="script.js"></script>
+    <!-- ref to javascript -->
+    <script src="script.js"></script>
 
 </body>
+
 </html>

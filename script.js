@@ -1,14 +1,7 @@
-// project image array
-const projectImages = [
-  'assets/images/weather-dashboard.png',
-  'assets/images/code-quiz.png',
-  'assets/images/day-planner.png',
-  'assets/images/password-generator.png'
-]
-
 const projectArray = [
   {
     title: "Date Rescue",
+    images: ["assets/images/date-rescue/date-rescue1.png", "assets/images/date-rescue/date-rescue2.png", "assets/images/date-rescue/date-rescue3.png", "assets/images/date-rescue/date-rescue4.png", "assets/images/date-rescue/date-rescue5.png", "assets/images/date-rescue/date-rescue5.png"],
     description: `Dating safety app made to help people feel secure when meeting potential new flames off of dating apps.
     Users can generate a public “date page” that contains information about their upcoming meeting that they can
     then share with friends, and which can be canceled at the user’s discretion or will expire in 12 hours. Users
@@ -20,6 +13,7 @@ const projectArray = [
   },
   {
     title: "WordLove",
+    images: ["assets/images/wordlove/wordlove-1.png", "assets/images/wordlove/wordlove-2.png", "assets/images/wordlove/wordlove-3.png", "assets/images/wordlove/wordlove-4.png", "assets/images/wordlove/wordlove-5.png"],
     description: "Vocabulary learning app that allows users to look up words and phrases in other languages and save them to their own custom vocabulary lists. Users can even practice their saved words with flashcards.",
     languages: "HTML, CSS, JavaScript, Node.js, MySQL",
     github: "https://github.com/github-marti/WordLove",
@@ -101,12 +95,26 @@ window.onscroll = function () { stickyNavBar() };
 $('.project-wrapper').click(function () {
   let modalIndex = $(this).attr('modal-index');
   $('.modal-title').text(projectArray[modalIndex].title);
+  if (projectArray[modalIndex].images) {
+    $('#modal-img-1').attr('src', projectArray[modalIndex].images[0])
+    $('#modal-img-2').attr('src', projectArray[modalIndex].images[1])
+    $('#modal-img-3').attr('src', projectArray[modalIndex].images[2])
+  } else {
+    $('#modal-img-1').attr('src', '')
+    $('#modal-img-2').attr('src', '')
+    $('#modal-img-3').attr('src', '')
+  };
   $('.modal-description').text(projectArray[modalIndex].description);
   $('.modal-github').attr("href", projectArray[modalIndex].github);
   $('.modal-deployed').attr("href", projectArray[modalIndex].deployed);
   $('.modal-languages').text(projectArray[modalIndex].languages);
   $('.modal').attr('style', 'display:block;');
-})
+});
+
+// open up image navigate in modal when images are clicked
+// $('.modal-img').click(function () {
+//   $('.img-nav-container').toggle()
+// })
 
 // make modal disappear when screen is narrow
 $('.close').click(function () {

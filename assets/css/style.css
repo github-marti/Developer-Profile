@@ -163,35 +163,66 @@ body {
     overflow: auto;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
+    z-index: 1000
+}
+
+.modal-img {
+    width: 30%;
+    padding: 5px;
 }
 
 .modal-content {
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
     margin: auto;
-    background: white;
+    background: rgb(49, 47, 62);
+    color: white;
     overflow: auto;
     padding: 30px;
-    width: 70%;
+    width: 95%;
     overflow: auto;
-    height: 60%;
+    height: 95%;
     border: 5px solid rgb(255, 212, 125);
     border-radius: 5px;
 }
 
 .modal-content h1 {
-    color: rgb(49, 47, 62);
+    color: rgb(255, 212, 125);
     font-size: 2.5em;
 }
 
 .modal-content a {
-    color: rgba(49, 47, 62);
+    color: rgb(255, 212, 125);
     margin: 0 10px;
     font-size: 1.3em;
 }
 
 .modal-content a:hover {
     color: rgb(255, 212, 125);
+}
+
+.img-nav-container {
+    position: absolute;
+    text-align: center;
+    background: rgb(49, 47, 62);
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1001
+}
+
+.img-nav-controls {
+    position: absolute;
+    margin: 0 auto;
+    font-size: 2em;
+    width: 100%;
+    bottom: 10px
+}
+
+.img-nav-controls i {
+    padding: 0 50px;
 }
 
 .modal-languages {
@@ -233,11 +264,11 @@ body {
 }
 
 #date-rescue {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url("../images/date-rescue3.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url("../images/date-rescue/date-rescue1.png");
 }
 
 #lets-talk {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url("../images/wordlove.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url("../images/wordlove/wordlove-1.png");
 }
 
 #note-taker {
