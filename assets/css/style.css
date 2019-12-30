@@ -264,27 +264,33 @@ body {
 }
 
 #date-rescue {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url("../images/date-rescue/date-rescue1.png");
+    background-image: url("../images/date-rescue/date-rescue1.png");
+    background-position: 0% 0%;
 }
 
 #lets-talk {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url("../images/wordlove/wordlove-1.png");
+    background-position: 0% 0%;
 }
 
 #note-taker {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url("../images/note-taker.png");
+    background-position: 0% 0%;
 }
 
 #musi-holic {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url("../images/musi-holic.png");
+    background-position: 0% 0%;
 }
 
 #weather-dashboard {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url("../images/weather-dashboard.png");
+    background-position: 0% 0%;
 }
 
 #team-profile-generator {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url("../images/team-summary-generator.png");
+    background-position: 0% 0%;
 }
 
 .project-title {
@@ -292,10 +298,12 @@ body {
     align-items: center;
     justify-content: center;
     position: absolute;
-    font-size: 2em;
+    font-size: 2.4em;
     text-align: center;
     color: rgb(255, 212, 125);
     background: rgba(49, 47, 62);
+    font-style: italic;
+    padding: 10px;
     top: 0;
     right: 0;
     bottom: 0;
@@ -409,6 +417,18 @@ body {
         font-size: 3em;
     }
 
+    .projects-container {
+        width: 100%;
+    }
+
+    .project-title {
+        font-size: 2.7em;
+    }
+
+    .project-wrapper {
+        width: 100%;
+    }
+
     .modal-content {
         width: 90%;
     }
@@ -427,7 +447,7 @@ body {
 
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (min-width: 600px) {
     .project-image {
         display: none;
     }
@@ -454,6 +474,10 @@ body {
 @media screen and (min-width: 1000px) {
     .profile-img {
         display: inline-block;
+    }
+
+    .project-wrapper {
+        width: 30%;
     }
 
     .text-column {
