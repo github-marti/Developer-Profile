@@ -96,9 +96,9 @@ $('.project-wrapper').click(function () {
   let modalIndex = $(this).attr('modal-index');
   $('.modal-title').text(projectArray[modalIndex].title);
   if (projectArray[modalIndex].images) {
-    $('#modal-img-1').attr('src', projectArray[modalIndex].images[0])
-    $('#modal-img-2').attr('src', projectArray[modalIndex].images[1])
-    $('#modal-img-3').attr('src', projectArray[modalIndex].images[2])
+    for (let i = 1; i <= 3; i++) {
+      $(`#modal-img-${i}`).attr('src', projectArray[modalIndex].images[i - 1]);
+    };
   } else {
     $('#modal-img-1').attr('src', '')
     $('#modal-img-2').attr('src', '')
@@ -110,11 +110,6 @@ $('.project-wrapper').click(function () {
   $('.modal-languages').text(projectArray[modalIndex].languages);
   $('.modal').attr('style', 'display:block;');
 });
-
-// open up image navigate in modal when images are clicked
-// $('.modal-img').click(function () {
-//   $('.img-nav-container').toggle()
-// })
 
 // make modal disappear when screen is narrow
 $('.close').click(function () {

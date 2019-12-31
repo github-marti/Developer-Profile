@@ -445,6 +445,15 @@ body {
         display: none;
     }
 
+    #modal-img-1 {
+        width: 90%
+    }
+
+    #modal-img-2,
+    #modal-img-3 {
+        display: none;
+    }
+
 }
 
 @media screen and (min-width: 600px) {
@@ -467,6 +476,15 @@ body {
 
     .project-wrapper {
         width: 45%;
+    }
+
+    #modal-img-1,
+    #modal-img-2 {
+        width: 45%
+    }
+
+    #modal-img-3 {
+        display: none;
     }
 }
     
