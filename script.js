@@ -21,6 +21,7 @@ const projectArray = [
   },
   {
     title: "Musi-Holic",
+    images: ["assets/images/musi-holic.png", "assets/images/musi-holic2.png"],
     description: "Looking for the perfect cocktail and music combination? Sit back, relax, and open this app! Input your favorite ingredients and pick one of the available drink recipes, and Musi-Holic will recommend a song for you based on your drink of choice.",
     languages: "HTML, CSS, JavaScript",
     github: "https://github.com/github-marti/Code-Imposters-Project",
@@ -28,6 +29,7 @@ const projectArray = [
   },
   {
     title: "Weather Dashboard",
+    images: ["assets/images/weather-dashboard.png"],
     description: "Want to check your local weather forecast? No problem! This app shows you the local weather conditions and allows you to search for the weather in the city of your choice.",
     languages: "HTML, CSS, JavaScript",
     github: "https://github.com/github-marti/Weather-Dashboard",
@@ -35,6 +37,7 @@ const projectArray = [
   },
   {
     title: "Team Profile Generator",
+    images: ["assets/images/team-summary-generator.png"],
     description: "Node CLI application that generates a PDF 'Team Profile' based on the user's command line input.",
     languages: "HTML, Node.js",
     github: "https://github.com/github-marti/Template-Engine---Team-Summary",
@@ -42,6 +45,7 @@ const projectArray = [
   },
   {
     title: "Note Taker",
+    images: ["assets/images/note-taker.png"],
     description: "Express application that allows users to save, update, and delete notes using a mySQL database.",
     languages: "HTML, CSS, JavaScript, Node.js, MySQL",
     github: "https://github.com/github-marti/Note-Taker",
@@ -97,12 +101,12 @@ $('.project-wrapper').click(function () {
   $('.modal-title').text(projectArray[modalIndex].title);
   if (projectArray[modalIndex].images) {
     for (let i = 1; i <= 3; i++) {
-      $(`#modal-img-${i}`).attr('src', projectArray[modalIndex].images[i - 1]);
+      if (projectArray[modalIndex].images[i - 1]) {
+        $(`#modal-img-${i}`).attr('src', projectArray[modalIndex].images[i - 1]);
+      } else {
+        $(`#modal-img-${i}`).attr('src', '');
+      }
     };
-  } else {
-    $('#modal-img-1').attr('src', '')
-    $('#modal-img-2').attr('src', '')
-    $('#modal-img-3').attr('src', '')
   };
   $('.modal-description').text(projectArray[modalIndex].description);
   $('.modal-github').attr("href", projectArray[modalIndex].github);
