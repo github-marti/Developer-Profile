@@ -20,12 +20,12 @@ const projectArray = [
     deployed: "https://wordlove.herokuapp.com/"
   },
   {
-    title: "Musi-Holic",
-    images: ["assets/images/musi-holic.png", "assets/images/musi-holic2.png"],
-    description: "Looking for the perfect cocktail and music combination? Sit back, relax, and open this app! Input your favorite ingredients and pick one of the available drink recipes, and Musi-Holic will recommend a song for you based on your drink of choice.",
-    languages: "HTML, CSS, JavaScript",
-    github: "https://github.com/github-marti/Code-Imposters-Project",
-    deployed: "https://github-marti.github.io/Code-Imposters-Project/"
+    title: "Musiholic",
+    images: ["assets/images/musiholic/musiholic-1.png", "assets/images/musiholic/musiholic-2.png"],
+    description: "Looking for the perfect cocktail and music combination? Sit back, relax, and open this app! Enter the ingredients you have on hand, your drink of choice, or select a music genre you're feeling and we'll see what we can whip up for you.",
+    languages: "Vue.js",
+    github: "https://github.com/github-marti/Musiholic",
+    deployed: "https://github-marti.github.io/Musiholic/"
   },
   {
     title: "Weather Dashboard",
