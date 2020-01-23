@@ -1,3 +1,5 @@
 # Developer-Profile
+Developer profile using HTML, CSS, and JavaScript.
 
-Marti McElreath developer profile using HTML, CSS, and JavaScript.
+# Deployed Page
+https://www.martimc.com
