@@ -264,7 +264,7 @@ body {
     position: relative;
     display: inline-block;
     width: 30%;
-    height: 300px;
+    height: 200px;
     padding: 15px;
     background-position: center;
     background-repeat: no-repeat;
@@ -272,7 +272,7 @@ body {
 }
 
 .project-wrapper:hover .project-title {
-    opacity: 1;
+    opacity: 0;
 }
 
 #date-rescue {
@@ -281,22 +281,22 @@ body {
 }
 
 #wordlove {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url("../images/wordlove/wordlove-1.png");
+    background-image: url("../images/wordlove/wordlove-1.png");
     background-position: 0% 0%;
 }
 
 #note-taker {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url("../images/note-taker.png");
+    background-image: url("../images/note-taker.png");
     background-position: 0% 0%;
 }
 
 #musiholic {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url("../images/musiholic/musiholic-1.png");
+    background-image: url("../images/musiholic/musiholic-1.png");
     background-position: 0% 0%;
 }
 
 #weather-dashboard {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url("../images/weather-dashboard.png");
+    background-image: url("../images/weather-dashboard.png");
     background-position: 0% 0%;
 }
 
@@ -307,10 +307,11 @@ body {
 
 .project-title {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: absolute;
-    font-size: 2.4em;
+    font-size: 3em;
     text-align: center;
     color: rgb(255, 212, 125);
     background: rgba(49, 47, 62);
@@ -320,8 +321,9 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    opacity: 0;
+    opacity: 1;
     transition: 0.2s;
+    overflow: hidden;
 }
 
 .project-description {
