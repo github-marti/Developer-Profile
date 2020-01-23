@@ -148,7 +148,7 @@ body {
     text-align: center;
     font-size: 4em;
     margin: 20px;
-    padding: 20px 0;
+    padding: 20px 0 5px 0;
 }
 
 .modal {
@@ -240,15 +240,27 @@ body {
 }
 
 .projects-container {
-    cursor: pointer;
-    width: 90%;
+    width: 100%;
     padding-top: 30px;
     margin: 0 auto 80px auto;
     text-align: center;
     color: rgb(49, 47, 62);
+    position: relative;
+}
+
+.lang-container {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.lang-title {
+    cursor: pointer;
+    padding: 0 10px;
 }
 
 .project-wrapper {
+    cursor: pointer;
     position: relative;
     display: inline-block;
     width: 30%;
@@ -268,7 +280,7 @@ body {
     background-position: 0% 0%;
 }
 
-#lets-talk {
+#wordlove {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url("../images/wordlove/wordlove-1.png");
     background-position: 0% 0%;
 }
@@ -278,7 +290,7 @@ body {
     background-position: 0% 0%;
 }
 
-#musi-holic {
+#musiholic {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), url("../images/musiholic/musiholic-1.png");
     background-position: 0% 0%;
 }
