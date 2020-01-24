@@ -208,6 +208,7 @@ body {
 }
 
 .slide-in {
+    cursor: pointer;
     position: absolute;
     display: flex;
     align-items: center;
