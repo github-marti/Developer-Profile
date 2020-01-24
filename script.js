@@ -98,7 +98,7 @@ window.onscroll = function () { stickyNavBar() };
 // filter projects based on selected language
 $('.lang-title').on('click', function(event) {
   $('.lang-title').removeClass('active-lang');
-  $(`#${event.target.id}`).addClass('active-lang');
+  $(this).addClass('active-lang');
   if (event.target.textContent === 'All') {
     $('.project-wrapper').show();
   } else {
@@ -114,28 +114,9 @@ $('.lang-title').on('click', function(event) {
   }
 })
 
-// make modal appear when project image is clicked
-$('.project-wrapper').click(function () {
-  let modalIndex = $(this).attr('modal-index');
-  $('.modal-title').text(projectArray[modalIndex].title);
-  if (projectArray[modalIndex].images) {
-    for (let i = 1; i <= 3; i++) {
-      if (projectArray[modalIndex].images[i - 1]) {
-        $(`#modal-img-${i}`).attr('src', projectArray[modalIndex].images[i - 1]);
-      } else {
-        $(`#modal-img-${i}`).attr('src', '');
-      }
-    };
-  };
-  $('.modal-description').text(projectArray[modalIndex].description);
-  $('.modal-github').attr("href", projectArray[modalIndex].github);
-  $('.modal-deployed').attr("href", projectArray[modalIndex].deployed);
-  $('.modal-languages').text(projectArray[modalIndex].languages);
-  $('.modal').attr('style', 'display:block;');
-});
+// make image div scroll in when clicked
+$('.slide-in').click(function() {
+  $(this).toggleClass('show')
+})
 
-// make modal disappear when screen is narrow
-$('.close').click(function () {
-  $('.modal').attr('style', 'display:hidden;');
-});
 
