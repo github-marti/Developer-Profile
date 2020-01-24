@@ -117,6 +117,7 @@ $('.lang-title').on('click', function(event) {
 // make image div scroll in when clicked
 $('.slide-in').click(function() {
   $(this).toggleClass('show')
+  console.log('click');
 })
 
 

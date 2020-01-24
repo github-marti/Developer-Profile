@@ -62,24 +62,6 @@
     </div>
 
     <!-- hidden modal box -->
-    <div class="modal">
-        <div class="modal-content">
-            <span class="close"><i class="fas fa-window-close"></i></span>
-            <h1 class="modal-title playfair-display"></h1>
-            <div class="img-nav-container">
-                <div class="img-nav-controls">
-                    <i class="fas fa-chevron-left"></i>Back<i class="fas fa-chevron-right"></i>
-                </div>
-            </div>
-            <img id="modal-img-1" class="modal-img">
-            <img id="modal-img-2" class="modal-img">
-            <img id="modal-img-3" class="modal-img">
-            <h3 class="modal-description"></h3>
-            <a class="modal-github" target="_blank">Github Repo</a>
-            <a class="modal-deployed" target="_blank">Deployed Page</a>
-            <h3 class="modal-languages"></h3>
-        </div>
-    </div>
 
     <div id="projects" class="projects-container section">
         <h1 class="title playfair-display">Projects</h1>
@@ -97,6 +79,9 @@
             </h3>
         </div>
         <div id="date-rescue" class="project-wrapper" modal-index="0">
+            <div class="slide-in">
+                <div class="arrow-right"></div>
+            </div>
             <div class="project-title playfair-display">
                 <div>Date Rescue</div>
             </div>
@@ -110,67 +95,64 @@
                     <a href="https://date-rescue.herokuapp.com/" target="_blank">Deployed</a>
                 </div>
             </div>
-            <div class="slide-in">
-                    <div class="arrow-left">
+            <div id="wordlove" class="project-wrapper" modal-index="1">
+                <div class="project-title playfair-display">
+                    WordLove
+                </div>
+                <div class="summary">
+                    Vocabulary learning app that allows users to look up words and phrases in other languages and save
+                    them
+                    to their own custom vocabulary lists. Users can even practice their saved words with flashcards.
+                </div>
+            </div>
+            <div id="musiholic" class="project-wrapper" modal-index="2">
+                <div class="project-title playfair-display">
+                    Musiholic
+                </div>
+            </div>
+            <div id="weather-dashboard" class="project-wrapper" modal-index="3">
+                <div class="project-title playfair-display">
+                    Weather Dashboard
+                </div>
+            </div>
+            <div id="team-profile-generator" class="project-wrapper" modal-index="4">
+                <div class="project-title playfair-display">
+                    Team Profile Generator
+                </div>
+            </div>
+            <div id="note-taker" class="project-wrapper" modal-index="5">
+                <div class="project-title playfair-display">
+                    Note Taker
+                </div>
             </div>
         </div>
-        <div id="wordlove" class="project-wrapper" modal-index="1">
-            <div class="project-title playfair-display">
-                WordLove
-            </div>
-            <div class="summary">
-                Vocabulary learning app that allows users to look up words and phrases in other languages and save them
-                to their own custom vocabulary lists. Users can even practice their saved words with flashcards.
-            </div>
-        </div>
-        <div id="musiholic" class="project-wrapper" modal-index="2">
-            <div class="project-title playfair-display">
-                Musiholic
-            </div>
-        </div>
-        <div id="weather-dashboard" class="project-wrapper" modal-index="3">
-            <div class="project-title playfair-display">
-                Weather Dashboard
-            </div>
-        </div>
-        <div id="team-profile-generator" class="project-wrapper" modal-index="4">
-            <div class="project-title playfair-display">
-                Team Profile Generator
-            </div>
-        </div>
-        <div id="note-taker" class="project-wrapper" modal-index="5">
-            <div class="project-title playfair-display">
-                Note Taker
-            </div>
-        </div>
-    </div>
 
-    <!-- contact me section -->
-    <div id="contact" class="section">
-        <div class="hero-image"></div>
-        <img class="profile-img" src="assets/images/korea-photo-narrow.png">
-        <h1 class="title playfair-display">Marti McElreath</h1>
-        <div class="contact-text">
-            <h1 class="subname playfair-display">マーティ ミックエルリース</h3>
-                <h1 class="subname playfair-display">마티 믹켈리스</h3>
-                    <h3>marti@martimc.com</h3>
-                    <h2>
-                        <a href="https://github.com/github-marti" target="_blank">Github</a>
-                        <span class="line"></span>
-                        <a href="https://www.linkedin.com/in/marti-mcelreath" target="_blank">LinkedIn</a>
-                    </h2>
+        <!-- contact me section -->
+        <div id="contact" class="section">
+            <div class="hero-image"></div>
+            <img class="profile-img" src="assets/images/korea-photo-narrow.png">
+            <h1 class="title playfair-display">Marti McElreath</h1>
+            <div class="contact-text">
+                <h1 class="subname playfair-display">マーティ ミックエルリース</h3>
+                    <h1 class="subname playfair-display">마티 믹켈리스</h3>
+                        <h3>marti@martimc.com</h3>
+                        <h2>
+                            <a href="https://github.com/github-marti" target="_blank">Github</a>
+                            <span class="line"></span>
+                            <a href="https://www.linkedin.com/in/marti-mcelreath" target="_blank">LinkedIn</a>
+                        </h2>
+            </div>
         </div>
-    </div>
 
-    <!-- footer -->
-    <div class="footer playfair-display">
-        Nobody calls me chicken
-    </div>
+        <!-- footer -->
+        <div class="footer playfair-display">
+            Nobody calls me chicken
+        </div>
 
 
 
-    <!-- ref to javascript -->
-    <script src="script.js"></script>
+        <!-- ref to javascript -->
+        <script src="script.js"></script>
 
 </body>
 

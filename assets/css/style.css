@@ -151,94 +151,6 @@ body {
     padding: 20px 0 5px 0;
 }
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
-    z-index: 1000
-}
-
-.modal-img {
-    width: 30%;
-    padding: 5px;
-}
-
-.modal-content {
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
-    margin: auto;
-    background: rgb(49, 47, 62);
-    color: white;
-    overflow: auto;
-    padding: 30px;
-    width: 95%;
-    overflow: auto;
-    height: 95%;
-    border: 5px solid rgb(255, 212, 125);
-    border-radius: 5px;
-}
-
-.modal-content h1 {
-    color: rgb(255, 212, 125);
-    font-size: 2.5em;
-}
-
-.modal-content a {
-    color: rgb(255, 212, 125);
-    margin: 0 10px;
-    font-size: 1.3em;
-}
-
-.modal-content a:hover {
-    color: rgb(255, 212, 125);
-}
-
-.img-nav-container {
-    position: absolute;
-    text-align: center;
-    background: rgb(49, 47, 62);
-    display: none;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1001
-}
-
-.img-nav-controls {
-    position: absolute;
-    margin: 0 auto;
-    font-size: 2em;
-    width: 100%;
-    bottom: 10px
-}
-
-.img-nav-controls i {
-    padding: 0 50px;
-}
-
-.modal-languages {
-    font-style: italic;
-}
-
-.close {
-    cursor: pointer;
-    color: rgb(255, 212, 125);
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    padding: 5px;
-    border-radius: 3px;
-}
-
 .projects-container {
     width: 100%;
     padding-top: 30px;
@@ -277,6 +189,7 @@ body {
 }
 
 .project-title {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -298,14 +211,15 @@ body {
     position: absolute;
     display: flex;
     align-items: center;
-    right: 0;
+    justify-content: flex-end;
+    left: 30%;
     background: rgb(255, 212, 125);
     width: 70%;
     height: 100%;
     overflow: hidden;
     transition: transform .5s ease;
-    transform: translateX(96%);
-    -webkit-transform: translateX(96%);
+    transform: translateX(-96%);
+    -webkit-transform: translateX(-96%);
 }
 
 .slide-in.show {
@@ -319,16 +233,16 @@ body {
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent; 
     border-right: 10px solid rgba(49, 47, 62); 
-    padding-left: 5px;
 }
 
 .arrow-right {
+    float: right;
     width: 0; 
     height: 0; 
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent; 
-    border-left: 10px solid rgba(49, 47, 62); 
-    padding-left: 5px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent; 
+    border-left: 15px solid rgba(49, 47, 62); 
+    padding-right: 2.5%;
 }
 
 .summary {
@@ -336,7 +250,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: start;
-    float: left;
+    float: right;
     width: 66%;
     height: 100%;
     padding: 15px;
