@@ -222,6 +222,11 @@ body {
     -webkit-transform: translateX(-96%);
 }
 
+.slide-in img {
+    height: 100%;
+    padding: 0 5px;
+}
+
 .slide-in.show {
     transform: translateX(0);
     -webkit-transform: translateX(0);
