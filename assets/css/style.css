@@ -253,6 +253,7 @@ body {
 .summary {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     text-align: start;
     float: right;
@@ -269,7 +270,6 @@ body {
 
 .summary a {
     color: rgba(49, 47, 62);
-    padding: 10px 0;
     font-size: 1.3em;
     font-weight: bold;
     text-decoration: none;
