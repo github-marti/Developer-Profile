@@ -250,9 +250,9 @@ body {
     float: right;
     width: 0; 
     height: 0; 
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent; 
-    border-left: 20px solid rgba(49, 47, 62); 
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent; 
+    border-left: 25px solid rgba(49, 47, 62); 
     padding-right: 3%;
 }
 
