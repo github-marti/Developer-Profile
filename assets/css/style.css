@@ -107,6 +107,11 @@ body {
     text-align: center;
 }
 
+/* .emphasize {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+} */
+
 .section {
     text-align: center;
     padding-top: 50px;
@@ -118,7 +123,7 @@ body {
     width: 90%;
     margin: 0px auto;
     padding: 30px 0 50px 0;
-    font-size: 1.3em;
+    font-size: 1.1em;
     line-height: 1.5em;
     overflow: auto;
 }
@@ -248,7 +253,7 @@ body {
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent; 
     border-left: 20px solid rgba(49, 47, 62); 
-    padding-right: 2.5%;
+    padding-right: 3%;
 }
 
 .summary {
@@ -261,6 +266,7 @@ body {
     width: 66%;
     height: 100%;
     padding: 15px;
+    padding-right: 5%;
     background: white;
     font-size: 1em;
 }
@@ -278,46 +284,6 @@ body {
 
 .summary a:hover {
     color: rgb(255, 212, 125);
-}
-
-.project-description {
-    padding: 0;
-    margin: 20px 0;
-    overflow: auto;
-}
-
-.project-description p {
-    font-size: 1.2em;
-    padding: 10px 0;
-    margin-top: 0;
-}
-
-.project-description a {
-    display: block;
-    text-align: right;
-    font-size: 1.5em;
-    text-decoration: none;
-    margin: 10px;
-}
-
-.project-description i {
-    margin: 0 10px;
-}
-
-.project-image {
-    cursor: pointer;
-    width: 40%;
-    float: left;
-    padding: 0 20px 0 0;
-    margin-top: 10px;
-}
-
-.image-expand {
-    display: none;
-    cursor: pointer;
-    padding: 10px;
-    background: rgb(255, 212, 125);
-    border-radius: 3px;
 }
 
 .contact-text {
