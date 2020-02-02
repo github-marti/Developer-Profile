@@ -187,7 +187,7 @@ body {
     display: flex;
     flex-direction: row;
     position: relative;
-    height: 200px;
+    height: 250px;
     margin-bottom: 10px;
     background-position: center;
     background-repeat: no-repeat;
@@ -204,6 +204,7 @@ body {
     font-size: 2.2em;
     text-align: center;
     color: rgb(255, 212, 125);
+    background: #312f3e;
     font-weight: bold;
     padding: 15px;
     overflow: hidden;
@@ -224,11 +225,15 @@ body {
 }
 
 .project-imgs {
+    display: flex;
     width: 75%;
+    align-items: flex-start;
+    overflow: hidden;
 }
 
 .project-imgs img {
-    height: 180px;
+    height: 240px;
+    padding-right: 5px;
 }
 
 .slide-in {
