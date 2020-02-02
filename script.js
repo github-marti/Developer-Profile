@@ -1,3 +1,33 @@
+const projectArray = [
+  {
+    title: "Date Rescue",
+    languages: "React.js, Bootstrap, Express, Node.js, MySQL"
+  },
+  {
+    title: "WordLove",
+    languages: "HTML/CSS, JavaScript, jQuery, Express, Node.js, MySQL"
+  },
+  {
+    title: "Musiholic",
+    languages: "Vue.js, Bootstrap"
+  },
+  {
+    title: "the Library",
+    languages: "Python, Django"
+  },
+  {
+    title: "Weather Dashboard",
+    languages: "HTML/CSS, JavaScript, jQuery"
+  },
+  {
+    title: "Team Profile Generator",
+    languages: "HTML/CSS, Node.js"
+  },
+  {
+    title: "Note Taker",
+    languages: "HTML/CSS, JavaScript, jQuery, Express, Node.js, MySQL"
+  }
+]
 
 // variables for sticky navbar 
 const navBar = document.getElementById("stickynavbar");
@@ -62,7 +92,7 @@ $('.lang-title').on('click', function(event) {
 
 // make image div scroll in when clicked
 $('.slide-in').click(function() {
-  $(this).toggleClass('show')
+  $(this).toggleClass('show');
 })
 
 
