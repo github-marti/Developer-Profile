@@ -17,7 +17,6 @@ body {
     z-index: 100;
     overflow: hidden;
     background: rgb(49, 47, 62);
-    margin-bottom: 40px;
 }
 
 #topnav a {
@@ -57,10 +56,6 @@ body {
     position: fixed;
     top: 0;
     width: 100%
-}
-
-.sticky + .section {
-    padding-top: 90px;
 }
 
 .float-left {
@@ -123,10 +118,13 @@ body {
     color: rgb(49, 47, 62);
     background: white;
     width: 90%;
-    margin: 0px auto;
-    padding: 40px 0;
+    margin: 0 auto;
     line-height: 1.5em;
     overflow: auto;
+}
+
+.offset {
+    padding-top: 107px;
 }
 
 .profile-img {
@@ -369,7 +367,7 @@ body {
         font-size: 1.5em;
     }
 
-    .topnav a.social {
+    #topnav a.social {
         display: none;
     }
 
