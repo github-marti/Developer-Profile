@@ -110,7 +110,7 @@ body {
 
 .larger-text {
     font-size: 1.3em;
-    padding-bottom: 20px;
+    padding: 20px 0;
     line-height: 1.5em;
 }
 

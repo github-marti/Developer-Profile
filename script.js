@@ -60,7 +60,7 @@ $(document).scroll(function () {
   //get document scroll position
   let position = $(document).scrollTop();
   //get header height
-  let header = $('.topnav').outerHeight();
+  let header = $('#topnav').outerHeight();
 
   //check active section
   $('.section').each(function (index) {
