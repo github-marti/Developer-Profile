@@ -14,7 +14,7 @@ body {
 }
 
 #topnav {
-    z-index: 100;
+    z-index: 101;
     overflow: hidden;
     background: rgb(49, 47, 62);
 }
