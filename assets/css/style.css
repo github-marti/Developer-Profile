@@ -9,18 +9,18 @@ body {
     position: relative;
 }
 
-.topnav {
+.playfair-display {
+    font-family: 'Playfair Display', serif;
+}
+
+#topnav {
     z-index: 100;
     overflow: hidden;
     background: rgb(49, 47, 62);
     margin-bottom: 40px;
 }
 
-.playfair-display {
-    font-family: 'Playfair Display', serif;
-}
-
-.topnav a {
+#topnav a {
     display: block;
     color: white;
     text-align: center;
@@ -36,20 +36,20 @@ body {
 }
 
 
-.topnav a.active {
+#topnav a.active {
     background-color: rgb(255, 212, 125);
     color: rgb(49, 47, 62);
 }
 
-.topnav a.active:hover {
+#topnav a.active:hover {
     color: rgb(49, 47, 62);
 }
 
-.topnav a:hover {
+#topnav a:hover {
     color: rgb(255, 212, 125);
 }
 
-.topnav .icon {
+#topnav .icon {
     display: none;
 }
 
@@ -114,7 +114,7 @@ body {
 }
 
 .larger-text {
-    font-size: 1.2em;
+    font-size: 1.3em;
     padding-bottom: 20px;
     line-height: 1.5em;
 }

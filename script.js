@@ -30,7 +30,7 @@ const projectArray = [
 ]
 
 // variables for sticky navbar 
-const navBar = document.getElementById("stickynavbar");
+const navBar = document.getElementById("topnav");
 const sticky = navBar.offsetTop;
 
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
