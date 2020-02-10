@@ -82,8 +82,8 @@ $('.lang-title').on('click', function(event) {
     $('.project-wrapper').show();
   } else {
     // get array of projects that use selected language
-    const toHide = projectArray.filter(e => !e.languages.includes(event.target.textContent)).map(e => e.title);
-    const toShow = projectArray.filter(e => e.languages.includes(event.target.textContent)).map(e => e.title);
+    const toHide = projectArray.filter(e => !e.languages.indexOf(event.target.textContent) !== -1).map(e => e.title);
+    const toShow = projectArray.filter(e => e.languages.indexOf(event.target.textContent) !== -1).map(e => e.title);
     toHide.forEach(p => {
       $(`#${p.toLowerCase().replace(/\s/g, '-')}`).hide();
     });

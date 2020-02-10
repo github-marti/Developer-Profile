@@ -288,8 +288,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    text-align: start;
+    text-align: left;
     float: right;
     width: 70%;
     height: 100%;
