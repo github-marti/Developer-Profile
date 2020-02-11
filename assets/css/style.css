@@ -204,15 +204,15 @@ header {
 
 .responsive-title {
     display: none;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    color: #312f3e;
+    padding: 15px;
     width: 100%;
     height: 100%;
     font-size: 2.2em;
-    text-align: center;
-    color: #312f3e;
     font-weight: bold;
-    padding: 15px;
+    text-align: center;
     overflow: hidden;
 }
 
@@ -235,7 +235,6 @@ header {
     flex-direction: column;
     justify-content: space-between;
     text-align: left;
-    float: right;
     width: 70%;
     height: 100%;
     padding: 15px 15px 15px 0;
@@ -389,11 +388,7 @@ footer:hover {
         display: block;
     }
 
-    .subname {
-        font-size: 1.5em;
-    }
-
-    .line {
+    #contact span {
         display: none;
     }
 
@@ -425,10 +420,6 @@ footer:hover {
 @media screen and (min-width: 1000px) {
     #contact img {
         display: inline-block;
-    }
-
-    .text-column {
-        text-align: center;
     }
 
     .hero-image {
