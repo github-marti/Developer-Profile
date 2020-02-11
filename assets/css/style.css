@@ -9,12 +9,31 @@ body {
     position: relative;
 }
 
+
+/* generic css */
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
 .playfair-display {
     font-family: 'Playfair Display', serif;
 }
 
+.emphasize {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+}
+
+
+/* navbar css */
+
 #topnav {
-    z-index: 101;
+    z-index: 999;
     overflow: hidden;
     background: #312f3e;
 }
@@ -58,13 +77,8 @@ body {
     width: 100%
 }
 
-.float-left {
-    float: left;
-}
 
-.float-right {
-    float: right;
-}
+/* header css */
 
 header {
     background-color: #ffd47d;
@@ -96,11 +110,6 @@ header {
 .header-text h1,
 .header-text h3 {
     margin: 0;
-}
-
-.emphasize {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.2em;
 }
 
 .section {
