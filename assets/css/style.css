@@ -228,6 +228,37 @@ header {
     padding-right: 5px;
 }
 
+.summary {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    float: right;
+    width: 70%;
+    height: 100%;
+    padding: 15px 15px 15px 0;
+    background: white;
+    font-size: 1em;
+}
+
+.summary a {
+    color: #312f3e;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.summary a:hover {
+    color: #ffd47d;
+}
+
+.project-links {
+    margin-top: 20px;
+}
+
+/* slide-in */
 .slide-in {
     position: absolute;
     display: flex;
@@ -272,36 +303,6 @@ header {
 	border-left-color: #312f3e;
 	border-width: 20px;
     margin-top: -20px;
-}
-
-.summary {
-    position: absolute;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: left;
-    float: right;
-    width: 70%;
-    height: 100%;
-    padding: 15px 15px 15px 0;
-    background: white;
-    font-size: 1em;
-}
-
-.links {
-    width: 100%;
-}
-
-.summary a {
-    color: #312f3e;
-    font-size: 1.3em;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.summary a:hover {
-    color: #ffd47d;
 }
 
 
@@ -364,6 +365,10 @@ footer:hover {
 
 
 @media screen and (max-width: 600px) {
+    #topnav a.social {
+        display: none;
+    }
+
     .header-text h1 {
         font-size: 3.5em;
     }
@@ -372,20 +377,12 @@ footer:hover {
         font-size: 1.5em;
     }
 
-    #topnav a.social {
-        display: none;
-    }
-
     .title {
         font-size: 3em;
     }
 
     .projects-container {
         width: 100%;
-    }
-
-    .modal-content {
-        width: 90%;
     }
 
     #contact a {
@@ -397,15 +394,6 @@ footer:hover {
     }
 
     .line {
-        display: none;
-    }
-
-    #modal-img-1 {
-        width: 90%
-    }
-
-    #modal-img-2,
-    #modal-img-3 {
         display: none;
     }
 
@@ -430,10 +418,6 @@ footer:hover {
         width: 100%;
         justify-content: flex-start;
         padding: 15px;
-    }
-
-    .links {
-        margin-top: 20px;
     }
 }
     
