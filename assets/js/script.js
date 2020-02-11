@@ -75,9 +75,9 @@ $(document).scroll(function () {
 window.onscroll = function () { stickyNavBar() };
 
 // filter projects based on selected language
-$('.lang-title').on('click', function(event) {
-  $('.lang-title').removeClass('active-lang');
-  $(this).addClass('active-lang');
+$('.languages span').on('click', function(event) {
+  $('.languages span').removeClass('active');
+  $(this).addClass('active');
   if (event.target.textContent === 'All') {
     $('.project-wrapper').show();
   } else {
