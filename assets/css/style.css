@@ -10,7 +10,7 @@ body {
 }
 
 
-/* generic css */
+/* generic classes */
 
 .float-left {
     float: left;
@@ -30,7 +30,7 @@ body {
 }
 
 
-/* navbar css */
+/* navbar */
 
 #topnav {
     z-index: 999;
@@ -74,7 +74,7 @@ body {
 }
 
 
-/* header css */
+/* header */
 
 header {
     background-color: #ffd47d;
@@ -113,12 +113,6 @@ header {
     padding-top: 50px;
 }
 
-.larger-text {
-    font-size: 1.3em;
-    padding: 20px 0;
-    line-height: 1.5em;
-}
-
 #about {
     color: #312f3e;
     background: white;
@@ -126,6 +120,12 @@ header {
     margin: 0 auto;
     line-height: 1.5em;
     overflow: auto;
+}
+
+#about p:first-child {
+    font-size: 1.3em;
+    padding: 20px 0;
+    line-height: 1.5em;
 }
 
 .offset {
