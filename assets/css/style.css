@@ -67,10 +67,6 @@ body {
     color: #ffd47d;
 }
 
-#topnav .icon {
-    display: none;
-}
-
 .sticky {
     position: fixed;
     top: 0;
